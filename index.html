@@ -1,0 +1,20 @@
+<canvas id="myCanvas" width="200" height="100"></canvas>
+
+<script>
+    var canvas=document.getElementById("myCanvas");
+    //make variable ctx a pen
+    var ctx=canvas.getContext("2d");
+    //fill rectangle with red
+    ctx.fillStyle="red";
+    ctx.fillRect(0,0,30,30);
+    //draw a line from 30,0 to 60,30
+    ctx.moveTo(30,0);
+    ctx.lineTo(60,30);
+    ctx.stroke();
+    //draw a circle
+    ctx.beginPath();
+    ctx.arc(80,30,30,0,2*Math.PI);
+    ctx.fillStyle="red";
+    ctx.fill();
+
+</script>
